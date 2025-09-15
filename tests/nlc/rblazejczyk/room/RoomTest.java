@@ -55,6 +55,7 @@ class RoomTest {
     void testBE1_HouseCreatedWithMultipleBedrooms() {
         ArrayList<Room> house = new ArrayList<>(Arrays.asList(kitchen, masterBedroom, masterBedroom, masterBedroom, extraSpace, bathroom));
         Assertions.assertEquals(6, house.size(), "House should allow multiple master bedrooms");
+        System.out.println("bob");
     }
 
     // BE2 - House with address

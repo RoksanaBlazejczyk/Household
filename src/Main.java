@@ -15,7 +15,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Main myApp = new Main();
-        myApp.runTest();
+        myApp.runProject();
         //Occupants
         Adult a1 = new Adult("Bob", "Harris", "23/09/2002", 'M', 123, "Super busy", 123000);
         Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", "Grade 4");
@@ -45,7 +45,7 @@ public class Main {
 
 
 
-    public void runTest() {
+    public void runProject() {
         //Create Members (Adult + Child)
         Adult a1 = new Adult("boib", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
         Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", "Grade 4");
