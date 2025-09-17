@@ -20,7 +20,7 @@ class MemberTest {
 
     @BeforeEach
     void setUp() {
-        adult = new Adult("boib", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
+        adult = new Adult("bob", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
         child = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", 4);
         pet = new Pet("oscar", "cat", "tuxedo", "10/6/2021", 'M', false, 0);
     }
