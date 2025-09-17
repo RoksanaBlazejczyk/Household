@@ -17,12 +17,17 @@ class MemberTest {
     Adult adult;
     Child child;
     Pet pet;
+    Adult anotherAdult;
+    Child anotherChild;
 
     @BeforeEach
     void setUp() {
         adult = new Adult("bob", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
         child = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", 4);
         pet = new Pet("oscar", "cat", "tuxedo", "10/6/2021", 'M', false, 0);
+
+        anotherAdult = new Adult("Jane", "Doe", "01/01/1980", 'F', 789, "Working", 150000);
+        anotherChild = new Child("Sam", "Doe", "01/01/2010", 'M', 101, "School", 10);
     }
 
     //HE1 – create household with good data - valid
@@ -162,12 +167,10 @@ class MemberTest {
                 "County", 2000, 150.5, members1
         );
 
-        Adult anotherAdult = new Adult("Jane", "Doe", "01/01/1980", 'F', 789, "Working", 150000);
-        Child anotherChild = new Child("Sam", "Doe", "01/01/2010", 'M', 101, "School", 10);
-        List<Member> occupants2 = Arrays.asList(anotherAdult, anotherChild);
+        ArrayList<Member> members2 = new ArrayList<>(Arrays.asList(anotherAdult, anotherChild));
         Household household2 = new Household(
                 "2 New Street", "G12 3HK", "Auchinshoogle", "Flat",
-                "County", 2000, 100.0, occupants2
+                "County", 2000, 100.0, members2
         );
 
         String householdView1 = household1.toString();
