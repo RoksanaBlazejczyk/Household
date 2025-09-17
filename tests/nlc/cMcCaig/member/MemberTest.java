@@ -19,6 +19,7 @@ class MemberTest {
     Pet pet;
     Adult anotherAdult;
     Child anotherChild;
+    Pet anotherPet;
 
     @BeforeEach
     void setUp() {
@@ -34,25 +35,25 @@ class MemberTest {
     @Test
     void testHE1_householdCreatedWithOneAdult() {
         ArrayList<Member> members = new ArrayList<>(Collections.singletonList(adult));
-        Assertions.assertEquals(Arrays.asList(adult), members, "nlc.Household must have one Adult.");
+        Assertions.assertEquals(Collections.singletonList(adult), members, "Household must have one Adult.");
     }
 
     @Test
     void testHE1_householdCreatedWithOneAdultOneChild() {
         ArrayList<Member> members = new ArrayList<>(Arrays.asList(adult, child));
-        Assertions.assertEquals(Arrays.asList(adult, child), members, "nlc.Household must have one Adult and one Child.");
+        Assertions.assertEquals(Arrays.asList(adult, child), members, "Household must have one Adult and one Child.");
     }
 
     @Test
     void testHE1_householdCreatedWithOneAdultOneChildOnePet() {
         ArrayList<Member> members = new ArrayList<>(Arrays.asList(adult, child, pet));
-        Assertions.assertEquals(Arrays.asList(adult, child, pet), members, "nlc.Household must have one Adult and one Child with one Pet.");
+        Assertions.assertEquals(Arrays.asList(adult, child, pet), members, "Household must have one Adult and one Child with one Pet.");
     }
 
     @Test
     void testHE1_householdCreatedWithTwoAdultTwoChildThreePet() {
         ArrayList<Member> members = new ArrayList<>(Arrays.asList(adult, adult, child, child, pet, pet, pet));
-        Assertions.assertEquals(Arrays.asList(adult, adult, child, child, pet, pet, pet), members, "nlc.Household must have two Adults and two Children with three Pets.");
+        Assertions.assertEquals(Arrays.asList(adult, adult, child, child, pet, pet, pet), members, "Household must have two Adults and two Children with three Pets.");
     }
 
     //HE2 – create household with bad data – invalid
@@ -180,7 +181,6 @@ class MemberTest {
         Assertions.assertTrue(householdView1.contains(adult.toString()), "Household 1 view should contain the first adult's details.");
         Assertions.assertTrue(householdView1.contains(child.toString()), "Household 1 view should contain the first child's details.");
         Assertions.assertTrue(householdView1.contains(pet.toString()), "Household 1 view should contain the first pet's details.");
-
 
         Assertions.assertTrue(householdView2.contains(anotherAdult.toString()), "Household 2 view should contain the second adult's details.");
         Assertions.assertTrue(householdView2.contains(anotherChild.toString()), "Household 2 view should contain the second child's details.");

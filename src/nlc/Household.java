@@ -80,7 +80,7 @@ public class Household {
         }
 
         if (!hasMasterBedroom) {
-            throw new IllegalStateException("nlc.Household must have at least one Master Bedroom MATE!. No house available.");
+            throw new IllegalStateException("Household must have at least one Master Bedroom MATE!. No house available.");
         }
     }
 
@@ -109,7 +109,7 @@ public class Household {
 
     @Override
     public String toString() {
-        return "Whole nlc.Household Details:\n" +
+        return "Whole Household Details:\n" +
                 "Address: " + address + "\n" +
                 "Postcode: " + postcode + "\n" +
                 "City: " + city + "\n" +
