@@ -128,7 +128,7 @@ class MemberTest {
 
         String householdView = household.toString();
 
-        Assertions.assertTrue(householdView.contains(adult.toString()),
+        Assertions.assertTrue(householdView.contains(members.toString()),
                 "The household view should contain the adult's name.");
     }
 
@@ -142,7 +142,7 @@ class MemberTest {
 
         String householdView = household.toString();
 
-        Assertions.assertTrue(householdView.contains(adult.toString()),
+        Assertions.assertTrue(householdView.contains(members.toString()),
                 "The household view should contain the adult's name.");
     }
 
@@ -156,7 +156,7 @@ class MemberTest {
 
         String householdView = household.toString();
 
-        Assertions.assertTrue(householdView.contains(adult.toString()),
+        Assertions.assertTrue(householdView.contains(members.toString()),
                 "The household view should contain the adult's name.");
     }
 
