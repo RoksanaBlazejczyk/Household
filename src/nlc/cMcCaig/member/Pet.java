@@ -15,7 +15,7 @@ public class Pet extends Member {
     @Override
     public String toString() {
         if (microchipped == true) {
-            return "Pet Details:" +
+            return "Pet Details: " +
                     "name '" + getName() + '\'' +
                     ", species '" + species + '\'' +
                     ", breed '" + breed + '\'' +
@@ -43,7 +43,7 @@ public class Pet extends Member {
      * @param microchipped    of the pet
      * @param microchipNumber of the pet
      */
-    public Pet(String name, String species, String breed, String DOB, char gender, boolean microchipped, int microchipNumber) {
+    public Pet(String name, String species, String breed, String DOB, char gender, boolean microchipped, Integer microchipNumber) {
         setName(name);
         this.species = species;
         this.breed = breed;

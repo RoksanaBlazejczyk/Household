@@ -1,9 +1,9 @@
 package nlc.rsneddon.outside;
 
 public class Driveway extends OutsideArea {
-    private boolean hasDriveway;
-    private int capacity;
-    private String material;
+    private final boolean hasDriveway;
+    private final int capacity;
+    private final String material;
 
     public Driveway(double areaSQM, String surfaceType, boolean fencing, int capacity, String material, boolean hasDriveway) {
         super(areaSQM, surfaceType, fencing);

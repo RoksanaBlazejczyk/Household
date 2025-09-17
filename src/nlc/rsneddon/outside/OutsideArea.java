@@ -10,18 +10,34 @@ abstract class OutsideArea {
         this.surfaceType = surfaceType; //concrete, grass, slabs
         this.fencing = fencing;
     }
+
     public String getOutsideDetails() {
         return "Area in Square meters: " + areaSqM + "\n" +
                 "Surface type is: " + surfaceType + "\n" +
                 "Fenced: " + (fencing ? "yes" : "no");
     }
 
-    public double getAreaSqM() {return areaSqM;}
-    public void setAreaSqM(double areaSqM) {this.areaSqM = areaSqM;}
+    public double getAreaSqM() {
+        return areaSqM;
+    }
 
-    public String getSurfaceType() {return surfaceType;}
-    public void setSurfaceType(String surfaceType) {this.surfaceType = surfaceType;}
+    public void setAreaSqM(double areaSqM) {
+        this.areaSqM = areaSqM;
+    }
 
-    public boolean isFencing() {return fencing;}
-    public void setFencing(boolean fencing) {this.fencing = fencing;}
+    public String getSurfaceType() {
+        return surfaceType;
+    }
+
+    public void setSurfaceType(String surfaceType) {
+        this.surfaceType = surfaceType;
+    }
+
+    public boolean isFencing() {
+        return fencing;
+    }
+
+    public void setFencing(boolean fencing) {
+        this.fencing = fencing;
+    }
 }

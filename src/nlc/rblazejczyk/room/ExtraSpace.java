@@ -9,11 +9,21 @@ public class ExtraSpace extends Room {
         this.hasBasement = hasBasement;
     }
 
-    public boolean isHasLoft() {return hasLoft;}
-    public void setHasLoft(boolean hasLoft) {this.hasLoft = hasLoft;}
+    public boolean isHasLoft() {
+        return hasLoft;
+    }
 
-    public boolean isHasBasement() {return hasBasement;}
-    public void setHasBasement(boolean hasBasement) {this.hasBasement = hasBasement;}
+    public void setHasLoft(boolean hasLoft) {
+        this.hasLoft = hasLoft;
+    }
+
+    public boolean isHasBasement() {
+        return hasBasement;
+    }
+
+    public void setHasBasement(boolean hasBasement) {
+        this.hasBasement = hasBasement;
+    }
 
     private boolean hasLoft;
     private boolean hasBasement;

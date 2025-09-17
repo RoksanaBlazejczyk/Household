@@ -19,7 +19,7 @@ public class Adult extends Member {
      */
     @Override
     public String toString() {
-        return "Adult Details " +
+        return "Adult Details: " +
                 "name '" + getName() + '\'' +
                 ", surname '" + getSurname() + '\'' +
                 ", D.O.B '" + getDOB() + '\'' +

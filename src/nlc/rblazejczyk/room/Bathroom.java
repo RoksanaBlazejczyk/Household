@@ -2,7 +2,7 @@ package nlc.rblazejczyk.room;
 
 import java.util.ArrayList;
 
-public class Bathroom extends Room{
+public class Bathroom extends Room {
     public boolean isHasBathtub() {
         return hasBathtub;
     }
@@ -27,8 +27,6 @@ public class Bathroom extends Room{
         this.hasBathtub = hasBathtub;
         this.hasShower = hasShower;
     }
-
-
 
 
 }

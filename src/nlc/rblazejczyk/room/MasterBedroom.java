@@ -2,7 +2,7 @@ package nlc.rblazejczyk.room;
 
 import java.util.ArrayList;
 
-public class MasterBedroom extends Room{
+public class MasterBedroom extends Room {
     private boolean hasEnsuite;
     private boolean walkInCloset;
 
@@ -10,6 +10,7 @@ public class MasterBedroom extends Room{
     public boolean isHasEnsuite() {
         return hasEnsuite;
     }
+
     public boolean isWalkInCloset() {
         return walkInCloset;
     }

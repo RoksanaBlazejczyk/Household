@@ -23,13 +23,11 @@ public class Bedroom extends Room {
     private boolean hasBalcony;
 
 
-
     public Bedroom(String roomName, double areaSqM, int floor, ArrayList<String> items, int bedCount, boolean hasBalcony) {
         super(roomName, areaSqM, floor, items);
         this.bedCount = bedCount;
         this.hasBalcony = hasBalcony;
     }
-
 
 
 }

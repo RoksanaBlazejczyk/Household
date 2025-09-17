@@ -6,21 +6,41 @@ import java.util.ArrayList;
 public abstract class Room {
     private String roomName;
 
-    public double getAreaSqM() {return areaSqM;}
-    public void setAreaSqM(double areaSqM) {this.areaSqM = areaSqM;}
+    public double getAreaSqM() {
+        return areaSqM;
+    }
 
-    public String getRoomName() {return roomName;}
-    public void setRoomName(String roomName) {this.roomName = roomName;}
+    public void setAreaSqM(double areaSqM) {
+        this.areaSqM = areaSqM;
+    }
 
-    public int getFloor() {return floor;}
-    public void setFloor(int floor) {this.floor = floor;}
+    public String getRoomName() {
+        return roomName;
+    }
 
-    public ArrayList<String> getItems() {return items;}
-    public void setItems(ArrayList<String> items) {this.items = items;}
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
+    }
+
+    public int getFloor() {
+        return floor;
+    }
+
+    public void setFloor(int floor) {
+        this.floor = floor;
+    }
+
+    public ArrayList<String> getItems() {
+        return items;
+    }
+
+    public void setItems(ArrayList<String> items) {
+        this.items = items;
+    }
 
     private double areaSqM;
     private int floor;//no of the floors in property
-    private  ArrayList<String> items;
+    private ArrayList<String> items;
 
 
     public Room(String roomName, double areaSqM, int floor, ArrayList<String> items) {
@@ -29,10 +49,6 @@ public abstract class Room {
         this.floor = floor;
         this.items = items;
     }
-
-
-
-
 
 
 }

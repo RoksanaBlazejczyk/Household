@@ -1,8 +1,11 @@
-import nlc.cMcCaig.member.*;
-import nlc.rsneddon.outside.*;
+import nlc.Household;
+import nlc.cMcCaig.member.Adult;
+import nlc.cMcCaig.member.Child;
+import nlc.cMcCaig.member.Member;
 import nlc.rblazejczyk.room.*;
-
-
+import nlc.rsneddon.outside.BackGarden;
+import nlc.rsneddon.outside.Driveway;
+import nlc.rsneddon.outside.FrontGarden;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +13,6 @@ import java.util.Arrays;
 
 public class Main {
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
@@ -18,12 +20,12 @@ public class Main {
         myApp.runProject();
         //Occupants
         Adult a1 = new Adult("Bob", "Harris", "23/09/2002", 'M', 123, "Super busy", 123000);
-        Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", "Grade 4");
+        Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", 4);
         ArrayList<Member> totalHousehold = new ArrayList<>();
         totalHousehold.add(a1); // at least one Adult
         totalHousehold.add(c1);
 
-        //Household
+        //nlc.Household
         Household hh = new Household("32 Pheonix Drive", "GH7 PP", "Glasgow",
                 "Mansion", "South Lanarkshire", 1920, 800.99, totalHousehold);
 
@@ -43,12 +45,10 @@ public class Main {
     }
 
 
-
-
     public void runProject() {
         //Create Members (Adult + Child)
-        Adult a1 = new Adult("boib", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
-        Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", "Grade 4");
+        Adult a1 = new Adult("bob", "wwww", "23/09/2002", 'M', 123, "Super busy", 123000);
+        Child c1 = new Child("Alice", "Harris", "15/05/2015", 'F', 456, "Greenwood Primary", 4);
 
         ArrayList<Member> totalHousehold = new ArrayList<>();
         totalHousehold.add(a1); //at least one Adult required
@@ -61,7 +61,7 @@ public class Main {
         ArrayList<String> bathroomItems = new ArrayList<>(Arrays.asList("Sink", "Toilet", "Mirror"));
         ArrayList<String> extraSpaceItems = new ArrayList<>(Arrays.asList("Storage Box", "Bookshelf"));
 
-        //Create Household (validation will check for at least one Adult)
+        //Create nlc.Household (validation will check for at least one Adult)
         Household household = new Household(
                 "32 Pheonix Drive", "GH7 PP", "Glasgow",
                 "Mansion", "South Lanarkshire",
@@ -78,7 +78,7 @@ public class Main {
         Driveway driveway = new Driveway(32.15, "concrete", false, 3, "slabs", false);
         FrontGarden frontgarden = new FrontGarden(20, "Grass", true, new ArrayList<>(java.util.Arrays.asList("10x Rose", "6x Tulip", "3x Daisy")), true, false);
 
-        //Display Household
+        //Display nlc.Household
         System.out.println(household);
         System.out.println();
 
@@ -101,7 +101,6 @@ public class Main {
     }
 
     /**
-     *
      * @param room
      */
     public static void displayRoomInfo(Room room) {

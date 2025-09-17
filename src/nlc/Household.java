@@ -1,6 +1,11 @@
-import nlc.rblazejczyk.room.*;
-import nlc.cMcCaig.member.Member;
+package nlc;
+
 import nlc.cMcCaig.member.Adult;
+import nlc.cMcCaig.member.Member;
+import nlc.rblazejczyk.room.Bedroom;
+import nlc.rblazejczyk.room.ExtraSpace;
+import nlc.rblazejczyk.room.MasterBedroom;
+import nlc.rblazejczyk.room.Room;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,6 +68,7 @@ public class Household {
         }
         rooms.add(room);
     }
+
     public void validateRooms() {
         boolean hasMasterBedroom = false;
 
@@ -74,7 +80,7 @@ public class Household {
         }
 
         if (!hasMasterBedroom) {
-            throw new IllegalStateException("Household must have at least one Master Bedroom MATE!. No house available.");
+            throw new IllegalStateException("nlc.Household must have at least one Master Bedroom MATE!. No house available.");
         }
     }
 
@@ -103,7 +109,7 @@ public class Household {
 
     @Override
     public String toString() {
-        return "Whole Household Details:\n" +
+        return "Whole nlc.Household Details:\n" +
                 "Address: " + address + "\n" +
                 "Postcode: " + postcode + "\n" +
                 "City: " + city + "\n" +

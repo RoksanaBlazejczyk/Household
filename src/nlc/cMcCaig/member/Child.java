@@ -5,14 +5,14 @@ package nlc.cMcCaig.member;
  */
 public class Child extends Member {
     private String schoolName;
-    private String grade;
+    private int grade;
 
     /**
      * @return the attributes of the child
      */
     @Override
     public String toString() {
-        return "Child Details" +
+        return "Child Details: " +
                 "name '" + getName() + '\'' +
                 ", surname '" + getSurname() + '\'' +
                 ", D.O.B '" + getDOB() + '\'' +
@@ -31,7 +31,7 @@ public class Child extends Member {
      * @param schoolName    of child
      * @param grade         of child
      */
-    public Child(String name, String surname, String DOB, char gender, Integer contactNumber, String schoolName, String grade) {
+    public Child(String name, String surname, String DOB, char gender, Integer contactNumber, String schoolName, int grade) {
         setName(name);
         setSurname(surname);
         setDOB(DOB);
@@ -45,7 +45,7 @@ public class Child extends Member {
         return schoolName;
     }
 
-    public String getGrade() {
+    public int getGrade() {
         return grade;
     }
 }
